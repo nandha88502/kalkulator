@@ -1,0 +1,82 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> calculator </title>
+		<link rel="stylesheet" href="stylesheet.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<div class="calculator">
+			<input type="text" class="calculator-screen"  value="0" disabled>
+			<div class="calculator-keys">
+				<div class="row">
+					<button class="all-clear">AC</button>
+					<button class="persentage">%</button>
+					<button class="operator" value="/">&divide;</button>
+				</div>
+				<div class="row">
+					<button class="number" value="7">7</button>
+					<button class="number" value="8">8</button>
+					<button class="number" value="9">9</button>
+					<button class="operator" value="*">&times;</button>
+				</div>
+				<div class="row">
+					<button class="number" value="4">4</button>
+					<button class="number" value="5">5</button>
+					<button class="number" value="6">6</button>
+					<button class="operator" value="-">-</button>
+				</div>
+				<div class="row">
+					<button class="number" value="1">1</button>
+					<button class="number" value="2">2</button>
+					<button class="number" value="3">3</button>
+					<button class="operator" value="+">+</button>
+				</div>
+				<div class="row">
+					<button class="number zero-btn" value="0">0</button>
+					<button class="decimal" value=".">.</button>
+					<button class="equal-sign">=</button>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="script.js"></script>
+        <footer>
+		<div class="footer">
+			<div class="container">
+				<div class="footer-logo"><img
+						src="https://media0.giphy.com/media/M8u539G98rIxYpHnTW/giphy.gif?cid=6c09b952c33e8c3b077dee72361445d650e10eab407deeac&rid=giphy.gif"
+						class="putar" id="rotasi">
+					<p class="tengah">Copyright © Belajar Coding Dwi Ananda Putra 2020</p>
+				</div>
+			</div>
+		</div>
+		</footer>
+	<script>
+		var toggle = document.getElementById('toggle'),
+			sidebar = document.getElementById('sidebar'),
+			button = document.getElementById('button'),
+			state = 1;
+
+		toggle.onclick = function () {
+			if (state == 1) {
+				sidebar.style.right = "0px";
+				state = 0;
+			} else {
+				sidebar.style.right = "-450px";
+				state = 1;
+			}
+		};
+
+		button.onclick = function () {
+			if (state == 1) {
+				sidebar.style.right = "0px";
+				state = 0;
+			} else {
+				sidebar.style.right = "-450px";
+				state = 1;
+			}
+		};
+	</script>
+	</body>
+</html>
